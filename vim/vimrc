@@ -1,0 +1,29 @@
+source ~/.vim/vundle_plugins.vim
+
+
+noremap <Up> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+noremap <Down> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+noremap <Left> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+noremap <Right> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+
+noremap <F5> <ESC>:NERDTreeToggle<CR>
+inoremap <F5> <ESC>:NERDTreeToggle<CR>
+vnoremap <F5> <ESC>:NERDTreeToggle<CR>
+
+set number relativenumber
+
+set encoding=utf-8
+set laststatus=2
+set timeoutlen=1000 ttimeoutlen=0
+
+let mapleader = ","
+set showcmd
+
+let g:indent_guides_enable_on_vim_startup = 1
+
+colorscheme jellybeans
+set background=dark
+highlight Normal ctermbg=None guifg=white
+
+
+
