@@ -15,11 +15,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'nanotech/jellybeans.vim'
-
-
-
-
+Plugin 'KeitaNakamura/neodark.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
