@@ -21,9 +21,26 @@ noremap <F5> <ESC>:NERDTreeToggle<CR>
 inoremap <F5> <ESC>:NERDTreeToggle<CR>
 vnoremap <F5> <ESC>:NERDTreeToggle<CR>
 
+nnoremap / $
+" Map auto complete of (, ", ', [
+inoremap $1 ()<esc>i
+inoremap $2 []<esc>i
+inoremap $3 {}<esc>i
+inoremap $4 {<esc>o}<esc>O
+inoremap $q ''<esc>i
+inoremap $e ""<esc>i
+
+" Abbreviations
+iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
+
+" While searching in Command Mode
+"set path+=**
+set path=$PWD/**
+" Display all matching files when we tab complete
+set wildmenu
+
 " Colors :D
 colorscheme neodark
-set background=dark
 " Use WSL's background color
 highlight Normal ctermbg=None guifg=white 
 
@@ -33,7 +50,14 @@ set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0 
 
 let g:indent_guides_enable_on_vim_startup = 1
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 " Vim configs
 set number relativenumber
 set showcmd
+
+highlight CursorLine ctermbg=233
+set cul
+
+highlight ColorColumn ctermbg=232
+set colorcolumn=101
