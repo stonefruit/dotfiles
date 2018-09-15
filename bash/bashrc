@@ -46,3 +46,4 @@ function parse_git_dirty {
 }
 
 export PS1="\u@\h:\W\`parse_git_branch\`\\$ "
+LS_COLORS="$LS_COLORS:di=1;33"
