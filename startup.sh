@@ -6,7 +6,7 @@ if [ ! -d ~/.vim ]; then
 fi
 
 if [ ! -f ~/.vimrc ]; then
-  echo "Symliking '~/dotfiles/vim/vimrc' to '~/.vimrc'"
+  echo "Symlinking '~/dotfiles/vim/vimrc' to '~/.vimrc'"
   ln -s ~/dotfiles/vim/vimrc ~/.vimrc
   echo "Success"
 fi
