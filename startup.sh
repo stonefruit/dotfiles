@@ -16,3 +16,9 @@ if [ ! -f ~/.tmux.conf ]; then
   ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
   echo "Success"
 fi
+
+if [ ! -d ~/.cheat ]; then
+  echo "Symlinking '~/dotfiles/cheat' to '~/.cheat'"
+  ln -s ~/dotfiles/cheat ~/.cheat
+  echo "Success"
+fi
