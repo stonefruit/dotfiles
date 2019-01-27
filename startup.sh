@@ -10,3 +10,9 @@ if [ ! -f ~/.vimrc ]; then
   ln -s ~/dotfiles/vim/vimrc ~/.vimrc
   echo "Success"
 fi
+
+if [ ! -f ~/.tmux.conf ]; then
+  echo "Symlinking '~/dotfiles/tmux/tmux.conf' to '~/.tmux.conf'"
+  ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+  echo "Success"
+fi
