@@ -1,4 +1,5 @@
 source ~/.bashrc
+export CHEAT_PATH="$HOME/.local/lib/python3.6/site-packages/usr/share/cheat/"
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
