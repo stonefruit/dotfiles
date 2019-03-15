@@ -3,14 +3,14 @@ set encoding=utf-8
 let mapleader = ","
 
 " Mappings
-noremap <Up> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
-noremap <Down> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
-noremap <Left> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
-noremap <Right> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
-inoremap <Up> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
-inoremap <Down> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
-inoremap <Left> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
-inoremap <Right> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+" noremap <Up> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+" noremap <Down> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+" noremap <Left> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+" noremap <Right> i<Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+" inoremap <Up> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+" inoremap <Down> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+" inoremap <Left> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+" inoremap <Right> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
 
 nmap s <Plug>(easymotion-s2)
 nmap <Space> <Plug>(easymotion-sn)
