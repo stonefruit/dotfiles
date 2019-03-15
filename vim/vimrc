@@ -1,3 +1,7 @@
+" NOTES
+" cursorline(i.e. cul) and relativenumbers were slowing down vim
+" use 's' or <space> for search
+
 source ~/.vim/vundle_plugins.vim
 set encoding=utf-8
 let mapleader = ","
@@ -11,6 +15,15 @@ let mapleader = ","
 " inoremap <Down> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
 " inoremap <Left> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
 " inoremap <Right> <Space>Don't<Space>Be<Space>A<Space>Loser!<Space><ESC>
+
+" --- backup and swap files ---
+" I save all the time, those are annoying and unnecessary...
+set nobackup
+set nowritebackup
+set noswapfile
+" --- remove sounds effects ---
+set noerrorbells
+set visualbell
 
 nmap s <Plug>(easymotion-s2)
 nmap <Space> <Plug>(easymotion-sn)
@@ -50,14 +63,15 @@ set laststatus=2
 set timeoutlen=1000 ttimeoutlen=0 
 
 let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_color_change_percent = 3
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 " Vim configs
-set number relativenumber
+" set number relativenumber
 set showcmd
 
 highlight CursorLine ctermbg=233
-set cul
+" set cul
 
 highlight ColorColumn ctermbg=232
 set colorcolumn=101
