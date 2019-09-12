@@ -16,7 +16,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'KeitaNakamura/neodark.vim'
+Plugin 'vimwiki/vimwiki'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+

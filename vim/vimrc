@@ -35,7 +35,7 @@ inoremap <F5> <ESC>:NERDTreeToggle<CR>
 vnoremap <F5> <ESC>:NERDTreeToggle<CR>
 
 nnoremap / $
-" Map auto complete of (, ", ', [
+
 inoremap $1 ()<esc>i
 inoremap $2 []<esc>i
 inoremap $3 {}<esc>i
@@ -75,3 +75,7 @@ highlight CursorLine ctermbg=233
 
 highlight ColorColumn ctermbg=232
 set colorcolumn=101
+
+set nocompatible
+filetype plugin on
+syntax on
