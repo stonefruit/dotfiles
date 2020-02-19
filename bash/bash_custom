@@ -1,0 +1,11 @@
+#!/usr/bin/bash  
+
+# PROMPT STYLES
+export PS1="\[\e[34m\]\A\[\e[m\] \[\e[36m\]\W\[\e[m\] \[\e[36m\]\\$\[\e[m\] "
+
+# ALIASES
+alias ll="ls -la"
+alias untar='tar -zxvf '
+alias ipe='curl ipinfo.io/ip'
+alias ipi='ipconfig getifaddr en0'
+alias c='clear'

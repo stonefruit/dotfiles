@@ -1,6 +1,0 @@
-source ~/.bashrc
-export CHEAT_PATH="$HOME/.local/lib/python3.6/site-packages/usr/share/cheat/"
-
-export PS1="\[\e[00;34m\]λ \W \[\e[0m\]"
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
