@@ -28,3 +28,22 @@ alias gpush='git push'
 alias gadd='git add'
 alias gfetch='git fetch'
 alias gstat='git status'
+
+# Function to get the current git branch
+get_git_branch() {
+    git branch 2>/dev/null | grep '\*' | sed 's/* //'
+}
+
+# Define colors
+LIGHT_BLUE='\[\e[94m\]'
+LIGHT_CYAN='\[\e[96m\]'
+LIGHT_GREEN='\[\e[92m\]'
+LIGHT_YELLOW='\[\e[93m\]'
+LIGHT_RED='\[\e[91m\]'
+RESET='\[\e[m\]'
+
+# Show exit status of the last command
+PROMPT_COMMAND='LAST_EXIT=$?'
+
+# Set the bash prompt
+PS1="${LIGHT_RED}\$(if [ \$LAST_EXIT != 0 ]; then echo '[$LAST_EXIT] '; fi)${RESET}${LIGHT_BLUE}\A${RESET} ${LIGHT_CYAN}\W${RESET} \$(git_branch=\$(get_git_branch); if [ -n \"\$git_branch\" ]; then echo \"${LIGHT_YELLOW}(\$git_branch)${RESET} \"; fi)\$(if [ \$(jobs | wc -l) -gt 0 ]; then echo \"${LIGHT_RED}[%j jobs]${RESET} \"; fi)\$ "
